@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(231, 240, 253);
+}
+main {
+    margin: 0px 100px;
+}
+
+img {
+    width: 100px;
+    height: 90px;
+}
+
+.profile-left {
+    padding: 30px 0;
+}
+
+.profile-middle {
+    width: 200px;
+    padding: 30px 0;
+}
+
+.job {
+    font-size: 12px;
+    color: grey;
+}
+
+.edit {
+    background-color: blue;
+    color: white;
+}
+
+.resume {
+    background-color: white;
+    border-color: green;
+    color: green;
+    margin: 0 10px;
+}
+
+.profile-right p{
+    display: inline-block;
+}
+
+.profile-right div {
+    margin: 10px;
+}
+.format {
+    font-weight: 900;
+    width: 150px;
+}
+button {
+    width: 70px;
+    height: 35px;
+    margin: 20px 0;
+}
+.profile {
+    background: #fff;
+    margin: 20px 0;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    height: 150px;
+}
+
+.form {
+    background: #fff;
+    padding: 20px;
+}
+
+header {
+    background: #fff;
+    height: 40px;
+    padding: 20px 100px 0 0;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+li {
+    list-style: none;
+}
+
+input {
+    width: 100%;
+    padding: 4px 0;
+    margin: 5px 0;
+}
+
+.button {
+    background-color: green;
+    color: #fff;
+}
