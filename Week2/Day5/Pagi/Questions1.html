@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Mencari Angka Terkecil dalam Array</h2>
+    <form id="input-form">
+        <input type="number" id="angka1" required>
+        <input type="number" id="angka2" required>
+        <input type="number" id="angka3" required>
+        <input type="button" value="Cari Angka Terkecil" onclick="cariAngkaTerkecil()">
+    </form>
+    <h3>Angka terkecil: <span id="hasil"></span></h3>
+
+    <script>
+        function cariAngkaTerkecil(){
+            const A = [document.getElementById("angka1").value, document.getElementById("angka2").value, document.getElementById("angka3").value]
+            var angkaTerkecil = A[0]
+
+            for (var i = 0; i < A.length; i++) {
+                if(A[i] < angkaTerkecil) {
+                    angkaTerkecil = A[i]
+                }
+            }
+            document.getElementById("hasil").textContent = angkaTerkecil;
+        }
+    </script>
+</body>
+</html>

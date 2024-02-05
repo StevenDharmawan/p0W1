@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3</title>
+</head>
+<body>
+    <script>
+        const inputUser = prompt("Masukkan Detik:")
+        const menit = Math.floor(inputUser / 60)
+        const formatMenit = menit < 10 ? ("0" + menit) : menit
+        const detik = inputUser - menit * 60;
+        const formatdetik = detik < 10 ? ("0" + detik) : detik
+        alert(`Maka output adalah ${formatMenit}:${formatdetik}`)
+    </script>
+</body>
+</html>
