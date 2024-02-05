@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Pelaku</title>
+</head>
+<body>
+    <script>
+        function cariPelaku(kalimat) {
+            var total = 0
+            for(var i = 0; i < kalimat.length - 2; i++) {
+                const merged = kalimat[i] + kalimat[i + 1] + kalimat[i + 2]
+
+                if(merged === "abc") {
+                    total++
+                }
+            }
+            return total
+        }
+
+        console.log(cariPelaku('mabcvabc')); 
+        console.log(cariPelaku('abcdabdc')); 
+        console.log(cariPelaku('bcabcac'));
+        console.log(cariPelaku('abcabcabc')); 
+        console.log(cariPelaku('babcbacabc'));
+    </script>
+</body>
+</html>

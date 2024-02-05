@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form-karyawan">
+        <input type="text" id="input-nama" placeholder="Nama" required>
+        <input type="text" id="input-jabatan" placeholder="Jabatan" required>
+        <input type="text" id="input-gaji" placeholder="Gaji" required>
+        <button type="submit">Tambah Karyawan</button>
+    </form>
+
+    <button onclick="hapusTerpilih()">Hapus Karyawan</button>
+    <input type="text" id="input-cari" placeholder="Cari Karyawan" onkeyup="cariDanTampilkan()">
+
+    <ul id="daftar-karyawan"></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>

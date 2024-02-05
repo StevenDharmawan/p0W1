@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class mobil</title>
+</head>
+<body>
+    <script>
+        class Mobil {
+            constructor(merek, harga, warna, bensin, roda) {
+                this.merek = merek
+                this.harga = harga
+                this.warna = warna
+                this.bensin = bensin
+                this.roda = roda
+            }
+
+            tampilkanSpesifikasi() {
+                return `Mobil saya bermerek ${this.merek} dengan harga ${this.harga} rupiah, berwarna ${this.warna}, bensinnya ${this.bensin}, dan beroda ${this.roda}`
+            }
+
+            jualMobil() {
+                return this.harga * 0.8
+            }
+        }
+
+        const hando = new Mobil('Hando', 300000000, 'merah', 'solar', 4)
+        console.log(hando.tampilkanSpesifikasi())
+        console.log(hando.jualMobil())
+    </script>
+</body>
+</html>

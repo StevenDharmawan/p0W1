@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2</title>
+</head>
+<body>
+    <script>
+
+
+        hitungLulus(nama, nilai, absen)
+        
+        
+        function hitungLulus(nama, nilai, absen) {
+            var nama = prompt("Masukkan nama:")
+            var nilai = parseInt(prompt("Masukkan nilai:"))
+            var absen = parseInt(prompt("Masukkan absen:"))
+
+            if(isNaN(nilai) || isNaN(absen)){
+                alert("Input Tidak Valid")
+            } else {
+                if (nilai >= 70 && absen <= 5) {
+                    alert(nama + " Lulus")
+                } else {
+                    alert(nama + " Tidak Lulus")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

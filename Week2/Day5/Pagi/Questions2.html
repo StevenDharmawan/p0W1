@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pencarian Linear</h1>
+    <form>
+        <label>Masukan Array (pisahkan dengan koma): </label>
+        <input type="text" name="input" id="input">
+        <label>Angka Target: </label>
+        <input type="number" name="target" id="target">
+        <input type="button" value="Cari" onclick="pencarianLinear()">
+    </form>
+        <h3>Hasil: Angka ditemukan pada indeks: <span id="hasil"></span></h3>
+    <script>
+        function pencarianLinear(){
+            const input = document.getElementById("input").value.split(',')
+            const target = document.getElementById("target").value
+            for(var i = 0; i < input.length; i++) {
+                if(input[i] == target) {
+                    document.getElementById("hasil").textContent = i
+                    break
+                } else {
+                    document.getElementById("hasil").textContent = -1
+                }
+            }
+            
+        }
+    </script>
+</body>
+</html>

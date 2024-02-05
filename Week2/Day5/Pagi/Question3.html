@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Penentuan Harga Diskon</h1>
+    <form>
+        <label>Harga Awal:</label>
+        <input type="number" name="input" id="input">
+        <label for="category">Kategori</label>
+        <select name="category" id="category">
+            <option value="Elektronik">Elektronik</option>
+            <option value="Pakaian">Pakaian</option>
+            <option value="Lainnya">Lainnya</option>
+        </select>
+        <input type="button" value="Hitung Diskon" onclick="hitungDiskon()">
+    </form>
+    <h3>Harga Setelah Diskon: <span id="hasil"></span></h3>
+
+    <script>
+        function hitungDiskon() {
+            const harga = document.getElementById("input").value
+            const category = document.getElementById("category").value
+
+            switch(category) {
+                case "Elektronik":
+                    document.getElementById("hasil").textContent = (harga * 0.9).toFixed(2)
+                    break
+                case "Pakaian":
+                    document.getElementById("hasil").textContent = (harga * 0.85).toFixed(2)
+                    break
+                default:
+                document.getElementById("hasil").textContent = harga
+            }
+
+        }
+    </script>
+</body>
+</html>
